@@ -7,8 +7,8 @@ import os
 
 # Initialize the Dash app
 app = dash.Dash(__name__,
-                requests_pathname_prefix="/app/SCAWWAS/",
-                routes_pathname_prefix="/app/SCAWWAS/")
+                requests_pathname_prefix="/app/DEU/",
+                routes_pathname_prefix="/app/DEU/")
 
 error_occur = False
 
@@ -17,7 +17,7 @@ try:
 
     # Retrieve the secrets containing DB connection details
     DB_NAME = "fsdh"
-    DB_HOST = 'fsdh-scawwas-psql-poc.postgres.database.azure.com'
+    DB_HOST = 'fsdh-deu-psql-poc.postgres.database.azure.com'
     print(f"DB_HOST is {DB_HOST}")
     DB_USER = 'fsdhadmin'
     DB_PASS = ''
